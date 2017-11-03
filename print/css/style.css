@@ -1,0 +1,162 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font-family:Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+.wraper{
+	width: 9.8cm;
+	/*transform:scale(0.98);
+	-ms-transform:scale(0.98); 	 IE 9 
+	-moz-transform:scale(0.98); 	 Firefox 
+	-webkit-transform:scale(0.98);  Safari 和 Chrome 
+	-o-transform:scale(0.98); */
+}
+/*logo*/
+.logo-content{
+	border-bottom: 1px solid #000;
+}
+.logo-img,.LOGO{
+	display: inline-block;
+}
+.logo-img img{
+	width: .8cm;
+    height: .8cm;
+    transform:scale(0.8);
+}
+.LOGO{
+	margin: 0;
+	transform:scale(0.8);
+}
+.LOGO-dt{
+	font-size: .4cm;
+	letter-spacing: .1cm;
+    font-weight: bold;
+}
+.LOGO-dd{
+	font-size: .2cm;
+	margin-left: 0;
+	margin-top: .1cm;
+}
+.LOGO-dd .dd1{
+	margin-right: .3cm;
+}
+/*section-2*/
+.post-title{
+	font-size: 1cm;
+	text-align: center;
+	padding-bottom: .1cm;
+	border-bottom: 1px solid #000;
+}
+/*section-3*/
+.ji-address{
+	overflow: hidden;
+	border-bottom: 1px solid #000;
+}
+.address-img,.address-tip{
+	float: left;
+}
+.address-img{
+	width: 10%;
+	width: .9cm;
+	height: .9cm;
+}
+.address-tip{
+	width: 90%;
+	font-size: .7cm;
+}
+/*section-4*/
+.address-tipC{
+	font-size: .45cm !important;
+}
+.mr8{margin-right: .8cm}
+.mr5{margin-right: .5cm}
+.tr{text-align: right}
+.p2-0{padding: .2cm 0}
+.mt2{margin-top: .2cm}
+/*section-5*/
+.address-tip3{
+	font-size: .25cm !important;
+}
+/*section-6*/
+.screen{
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+.screen-img{
+	width: 7.7cm;
+	height: 1.8cm;
+	padding: .2cm 0;
+	
+}
+/*section-7*/
+.alert-tip{
+	overflow: hidden;
+	font-size: .2em;
+	border-bottom: 1px solid #000;
+}
+.tip-div1,.tip-div2,.tip-div3{
+	float: left;
+	padding:0 .1cm;
+}
+.tip-div1{
+	width: 20%;
+}
+.print-time{
+	margin-top:40%;
+}
+.tip-div3{
+	padding: 0;
+	text-align: center;
+}
+.tip-div2{
+	width:60%;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	
+}
+.time-img{
+	width: .4cm;
+	height: .4cm;
+	margin-left: .2cm;
+}
+.ma-img{
+	width:1.5cm;
+	height: 1.5cm;
+	margin-top: 40%;
+}
+/*section-8*/
+.final-logo{
+	overflow: hidden;
+	border-bottom: 1px solid #000;
+}
+.final-div1,.final-div2{
+	float: left;
+	border: none;
+}
+.final-div2{
+
+}
+.final-txm{
+	width: 4.6cm;
+	height: .9cm;
+	margin-left:.2cm;
+}
+/*section-9*/
+.final-address{
+	overflow: hidden;
+	border-bottom: 1px dashed #000;
+	font-size: .2cm !important;
+}
+.line{
+	border-bottom: 1px solid #000;
+}
+.final-address1,.final-address2{
+	float: left;
+}
+.final-address1{
+	width: 84%;
+	border-right: 1px solid #000;
+}
+.address1{
+	overflow: hidden;
+}
+
