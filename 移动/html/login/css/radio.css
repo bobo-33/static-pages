@@ -1,0 +1,41 @@
+/*复选框样式*/
+.mui-checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border: solid 1px #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-clip: padding-box;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 18px;
+    text-align: center;
+  }
+.mui-checkbox:focus {
+  outline: 0 none;
+  outline-offset: -2px; }
+.mui-checkbox:checked {
+   background-color: #6ec850;
+   border: solid 1px #FFFFFF; }
+.mui-checkbox:before,.mui-checkbox:checked:before {
+  	display: inline-block;
+    font-family: iconfont;
+    content: "\e626";
+    color: #FFFFFF;
+    font-size: 14px;}
+.mui-checkbox:disabled {
+   background-color: #d9d9d9;
+   border: solid 1px #d9d9d9; }
+.mui-checkbox:disabled:before {
+  display: inline-block;
+  margin-top: 1px;
+  margin-left: 2px;
+  font-family: iconfont;
+  content: "\e626";
+  color: #FFFFFF;
+  font-size: 18px; }

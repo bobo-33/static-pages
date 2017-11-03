@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>支付方式</title>
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="style/style.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_451932_2bcomgq8ubi3haor.css"/>
+		<link rel="stylesheet" type="text/css" href="style/radio.css"/>
+		<link rel="stylesheet" type="text/css" href="style/checkbox.css"/>
+	</head>
+	<body>
+		<div class="wraper">
+			<div class="header">
+				<a href="javascript:go(-1);"></a>
+					选择支付方式
+				<a href="javascript:void(0);"></a>
+			</div>
+			<div class="main">
+				<h1>2500</h1>
+				<div class="space"></div>
+				<form >
+					<ul>
+						<li>
+							<div>
+								<p data-icon="&#xe601">游币支付</p>
+								<div><span>600</span>600</div>
+							</div>
+							<label><input class="mui-switch mui-switch-animbg" type="checkbox" value="600" id="switch"></label>
+						</li>
+						<li>
+							<div>
+								<p data-icon="&#xe6ca">百度钱包</p>
+								<div><span>百度安全支付服务</span></div>
+							</div>
+						    <label><input class="mui-radio" type="radio" name="pay" value="百度钱包"></label>		
+						</li>
+						<li>
+							<div>
+								<p data-icon="&#xe6f4">微信支付</p>
+								<div><span>使用微信支付，安全便捷</span></div>
+							</div>
+							<label><input class="mui-radio" type="radio" name="pay" checked value="微信支付"></label>
+						</li>
+						<li>
+							<div>
+								<p data-icon="&#xe64e">支付宝</p>
+								<div><span>支持有支付宝，网银的用户使用</span></div>
+							</div>
+							<label><input class="mui-radio" type="radio" name="pay" value="支付宝"></label>
+						</li>
+					</ul>
+					<a href="javascript:void(0);" id="paySure">确认支付</a>
+					<!--<input type="submit" value="确认支付" id="paySure"/>-->
+				</form>
+				
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//.main高度
+				var _h=$(window).height()-45;
+				console.log(_h);
+				$('.main').css('height',_h)
+				
+				
+				//
+				var payStyle=null;
+				var flag=0;
+				var sum=0;
+				function Extr(){
+					$('#switch').click(function(){						
+						console.log(this.checked?flag=$(this).val():flag=0)
+						});
+				}
+				
+				function Pay(){
+					payStyle=$("input:radio[name='pay']:checked").val();
+					if(payStyle==null){
+						return false;
+					}else{
+						console.log(payStyle)
+					}
+				}
+				$('#paySure').click(function(){	
+					Extr();
+					Pay();
+					console.log(payStyle);
+					console.log(flag)
+					console.log("是否使用了游币"+flag+",选择的支付方式是："+payStyle)
+				})
+			})
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,376 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+a{text-decoration: none;}
+[class*=icon-]:before,[class*=icon-]:after{font-family:iconfont;font-style:normal;-webkit-font-smoothing:antialiased}
+.icon-set:before { content: "\e60f"; }
+.icon-msg:after { content: "\e601";}
+.icon-user:before{ content: "\e710";color: #fd790e;}
+.icon-home:before{ content: "\e607";}
+.icon-classic:before{ content: "\e64c";}
+.icon-goods:before{ content: "\e67f";}
+.icon-cart:before{ content: "\e66b";}
+.icon-my:before{ content: "\e686";}
+.space{display:block;width:100%;min-height:12px;background-color:#eeeded;}
+.line{background-image:linear-gradient(0deg,#ddd,#ddd 50%,transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:bottom}
+/*---header-start---*/
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 44px;
+	background: #fc3c10;
+	z-index: 99;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header p{ margin-right: 15px;}
+.header a{
+	color: #fff;
+	font-size: 22px;
+}
+.header .icon-msg{margin-left: 10px;position: relative;}
+.header .icon-msg span{
+	min-width: 14px;
+    text-align: center;
+    line-height: 14px;
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background: #fff;
+    color: #fc3c10;
+    border-radius: 17px;
+    padding: 2px;
+    transform: scale(.7);
+    font-size: 14px;
+}
+/*---header-end---*/   
+.main{
+	margin-top: 44px;
+} 
+/*---user-header-start---*/
+/*193*/
+
+.userHead{
+	background: url(../img/bg.png) no-repeat;
+	background-size: cover;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.userHead>div{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.userHead>div p{
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border: 10px solid rgba(255,144,104,.9);
+    border-radius: 500px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    color: #fd790e;
+    margin-right: 15px;
+}
+.userHead>div p img{
+	width: 60%;
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+}
+.userHead>div div{    margin-top: 20px;}
+.userHead>div div h1{
+	color:#fff ;
+	font-size: 20px;
+	font-weight: normal;
+	 margin-bottom: 10px;
+}
+.userHead>div div span{
+	background: url(../img/level.png) no-repeat;
+	background-size: contain;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    line-height: 6px;
+    padding: 6px;
+    color: #FC3C10;
+}
+.userHead>a{color: #fff;margin-top: -40px;font-size: 14px;}
+.userHead>a:before{
+	content: "账户管理";
+}
+.userHead>a:after{
+	content: ">";
+}
+/*---user-header-end---*/
+/*---orderStatus-start---*/
+.orderStatus,.server{padding:15px;}
+.orderStatus div,
+.orderStatus ul,
+.server ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.orderStatus div,.server div{margin: 0 0 20px;}
+.orderStatus div p:before,.orderStatus li:before,.server div:before,.server li:before{
+	font-family:iconfont;font-style:normal;-webkit-font-smoothing:antialiased;
+	font-size: 20px;
+}
+.orderStatus div p:before,.server div:before{	
+	content: "\e600";
+	color: #9a9999;
+	margin-right: 5px;
+}
+.orderStatus div p:after{
+	content: "我的订单";
+}
+.orderStatus div a:before{
+	content: "查看更多订单 >";
+	color: #9a9999;
+	font-size: 14px;
+}
+.orderStatus ul a{
+	text-align: center;
+	flex-basis: 20%;
+}
+.orderStatus li:before,.server li:before{
+	color: #FC3C10;
+	display: block;
+}
+.orderStatus li:after,.server li:after{
+	color: #333;
+}
+.orderStatus .status-1:before{
+	content: "\e641";
+}
+.orderStatus .status-1:after{
+	content: "待付款";
+}
+.orderStatus .status-2:before{
+	content: "\e649";
+}
+.orderStatus .status-2:after{
+	content: "待发货";
+}
+.orderStatus .status-3:before{
+	content: "\e615";
+}
+.orderStatus .status-3:after{
+	content: "待收货";
+}
+.orderStatus .status-4:before{
+	content: "\e63d";
+}
+.orderStatus .status-4:after{
+	content: "待评价";
+}
+.orderStatus .status-5:before{
+	content: "\e62c";
+}
+.orderStatus .status-5:after{
+	content: "退换售后";
+}
+.orderStatus ul li{
+	position: relative;
+}
+.orderStatus ul li span{
+	min-width: 25px;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    position: absolute;
+    right: 40%;
+    top: -15px;
+    background: #fff;
+    color: #fc3c10;
+    border-radius: 17px;
+    padding: 2px;
+    transform: scale(.7);
+    font-size: 14px;
+    border: 1px solid #fc3c10;
+}
+.server div:before{
+	content: "\e626" !important;
+}
+.server div:after{
+	content: "客户服务";
+}
+.server ul a{
+	flex-basis: 25%;
+	text-align: center;
+}
+.server .status-1:before{
+	content: "12345";
+}
+.server .status-1:after{
+	content: "收藏商品";
+}
+.server .status-2:before{
+	content: "12345";
+}
+.server .status-2:after{
+	content: "收藏店铺";
+}
+.server .status-3:before{
+	content: "12345";
+}
+.server .status-3:after{
+	content: "浏览记录";
+}
+.server .status-4:before{
+	content: "\e609";
+}
+.server .status-4:after{
+	content: "客服中心";
+}
+.server a:nth-child(1) li:before,.server a:nth-child(2) li:before,.server a:nth-child(3) li:before{font-size: initial;}
+/*---orderStatus-end---*/
+/*---adverse-start---*/
+.adverse img{width: 100%;}
+/*---adverse-end---*/
+/*---recommend-start---*/
+.recommend{background: #eeeded;padding-top: 10px;margin-bottom: 50px;}
+.recommend h1{
+	color: #555354;
+	font-weight: normal;
+	font-size: 20px;
+	position:relative;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.recommend h1:before,.recommend h1:after{
+	content: "";
+    width: calc(90px - 20px);
+    height: 1px;
+    display: inline-block;
+    margin-right: 75px;
+    background-image: linear-gradient(0deg,#000,#000 50%,transparent 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.recommend h1:after{margin-left:40px;margin-right:0}
+.recommend h1 span:before{
+	content: "为你推荐";
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+    top: 5px;
+    width: 80px;
+    height: 20px;
+    margin-left: -40px;
+}
+.recommend ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.recommend ul a{
+	flex-basis: 39.8%;
+	padding: 16px;
+	background: #fff;
+	margin-bottom: 12px;
+}
+
+.recommend ul a:nth-child(2n+1){
+	margin-right: 6px;
+}
+.recommend ul a:nth-child(2n){
+	margin-left: 6px;
+}
+.recommend ul img{
+	width: 100%;
+}
+.recommend ul p{
+	color: #333;
+	text-overflow: -o-ellipsis-lastline;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;  
+    margin-bottom: 6px;
+}
+.recommend ul span{color: #ea4c4c;}
+.recommend ul span:before{
+	content: "￥";
+	font-size: 12px;
+}
+/*---recommend-end---*/
+/*---footer-start---*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 49px;
+	background: #fff;
+	z-index: 99;
+	background-image:linear-gradient(0deg,#ccc,#ccc 50%,transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:top
+}
+.footer ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer ul li{
+	flex-basis: 20%;
+	text-align: center;
+}
+.footer ul li a{
+	color: #817d7d;
+	margin-top: 3px;
+    display: inline-block;
+}
+.footer ul li a:before{
+	font-size: 18px;
+	display: block;
+}
+.footer ul li a:after{
+	font-size: 14px;
+}
+.footer .icon-home:after{
+	content: "首页";
+}
+.footer .icon-classic:after{
+	content: "分类";
+}
+.footer .icon-goods:after{
+	content: "好货";
+}
+.footer .icon-cart:after{
+	content: "购物车";
+}
+.footer .icon-my:after{
+	content: "我的";
+}
+.footer .on{
+	color: #fa1545 !important;
+}
+/*---footer-end---*/
+@media all and (max-width:320px){
+	.userHead>a { margin-top: -16px;}
+	.orderStatus li:after,.server li:after{font-size: 14px;}
+	.userHead>div p{width: 60px;height: 60px;line-height: 60px;font-size: 35px;}
+	.userHead>div div h1{font-size: 18px;}
+	.recommend ul a{flex-basis: 38%;}	
+}
+@media all and (min-width:768px){
+	.recommend ul a {flex-basis: 45%;}
+}
+@media all and (min-width:1024px){
+	.recommend ul a {flex-basis: 46.2%;}
+}

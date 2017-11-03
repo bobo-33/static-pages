@@ -1,0 +1,110 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+.photo>div:before,
+.num:before,.psw:before,
+.login-style a:before{
+	font-family: iconfont!important;
+	font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*******/
+.wraper{
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100%;
+}
+.photo{
+	display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.photo>div{position:relative;border:2px solid #fff;width: 120px;height: 120px;border-radius: 500px;}
+.photo>div:before{
+    font-size: 50px;
+    content: "\e644";
+    color: #fff;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    line-height: 50px;
+}
+.photo>div a{position:absolute;height:100%;width:100%;z-index:1}
+.photo>div:hover:after{color:#fff;z-index:0;opacity:0.8}
+.photo>div:after{
+	content: "Your Photo";
+    position: absolute;
+    top: 94%;
+    left: 52%;
+    margin: -40px 0 0 -45px;
+    color: #fff;
+    font-weight: bold;
+}
+form{padding: 29px;}
+.num,.psw{
+	border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+.psw{margin-top: 20px;}
+.num:before,.psw:before{	
+    font-size: 25px;
+    line-height: 25px;
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 24px;
+}
+.num:before{content: "\e81e";}
+.psw:before{content: "\e603";}
+input[type=text],input[type=password]{
+	background: none;
+	border: none;
+	color: #fff;
+}
+input::-webkit-input-placeholder{color:#fff;font-size: 16px;}  
+.rember{
+	text-align: center;
+    color: #fff;
+    margin: 42px 9px;
+}
+input[type=submit]{
+	padding: 9px 0;
+    width: 100%;
+    border: none;
+    background: rgba(255,255,255,.2);
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 10px;
+}
+/*tip*/
+.tip{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 22px 0 62px;
+}
+.tip a{color: #fff;}
+/*register*/
+.register{text-align: center;}
+.register a{color: #fff;text-decoration: none;}
+/*login-style*/
+.login-style{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 16px;
+}
+.login-style a{
+	width: 37px;
+	height: 37px;
+	margin-right:25px;
+	background-size: 100% !important;
+}
+.login-style a:first-child{background: url(../img/wx.png) no-repeat;}
+.login-style a:nth-child(2){background: url(../img/wb.png) no-repeat;}
+.login-style a:last-child{
+	background: url(../img/qq.png) no-repeat;
+	margin-right: 0;
+}

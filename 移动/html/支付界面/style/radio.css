@@ -1,0 +1,42 @@
+/*复选框样式*/
+.mui-radio{
+  -webkit-appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #dcdcdc;
+  border: solid 1px #d9d9d9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-clip: padding-box;
+  display: inline-block; 
+  vertical-align: middle;
+  }
+.mui-radio:focus {
+  outline: 0 none;
+  outline-offset: -2px; }
+.mui-radio:checked {
+   background-color: #6ec850;
+   border: solid 1px #FFFFFF; }
+.mui-radio:before,.mui-radio:checked:before {
+   display: inline-block;
+   margin-top: 0;
+   margin-left: 0;
+   font-family: iconfont;
+   content: "\e688";
+   color: #FFFFFF;
+   font-size: 18px; }
+.mui-radio:disabled {
+   background-color: #d9d9d9;
+   border: solid 1px #d9d9d9; }
+.mui-radio:disabled:before {
+  display: inline-block;
+  margin-top: 1px;
+  margin-left: 2px;
+  font-family: iconfont;
+  content: "\e688";
+  color: #FFFFFF;
+  font-size: 18px; }
