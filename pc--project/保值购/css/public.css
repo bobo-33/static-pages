@@ -1,0 +1,18 @@
+body,button,dd,div,dl,dt,footer,form,h1,h2,h3,h4,h5,h6,header,input,li,menu,ol,p,td,textarea,ul{margin:0;padding:0}
+body{font:16px/24px "微软雅黑"}
+dl,ol,ul{list-style:none}
+a{text-decoration: none;}
+h1,h2,h3,h4,b{font-weight: normal;}
+img{vertical-align: middle;}
+.border-b{border-bottom:1px solid #e4e4e4 ; }
+/*.no-border{border: none !important;}
+.left{float: left !important;}
+.right{float: right !important;}
+.pt162{padding-top: 162px;}
+.pl0{padding-left: 0 !important;}
+.mr0{margin-right: 0 !important;}
+.v-bottom{vertical-align: bottom;}
+.top,.main,.footer{width: 100%; max-width: 1920px;min-width: 1200px;margin: 0 auto;}
+.main{margin-top: 75px;}*/
+.indexPage{width: 1200px;margin: 0 auto;}
+/*.mt40{margin-top: 40px;}*/

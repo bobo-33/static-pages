@@ -1,0 +1,357 @@
+/*header-login*/
+.header-login{
+	background: #2f3336;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 14px;
+}
+.header-login .indexPage{
+	overflow: hidden;
+}
+.header-login .indexPage ul{
+	float: right;
+}
+.header-login .indexPage ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+.header-login .indexPage ul li a{
+	color: #fff;
+}
+.header-login .indexPage ul li:first-child p{
+	display: inline-block;
+}
+.header-login .indexPage ul li:first-child p:before{
+	content: "您好";
+	margin-right: 10px;
+}
+.header-login .indexPage ul .language{
+	margin: 0;
+}
+.header-login .indexPage ul .language a:first-child{
+	margin-right: 23px;
+}
+/*-------login-end*/
+.header-nav{
+	height: 75px;
+	line-height: 75px;
+}
+.header-nav .indexPage{
+	overflow: hidden;
+}
+.header-nav .indexPage a{
+	color: #333;
+}
+.header-nav .indexPage>ul{
+	float: left;
+}
+.header-nav .indexPage>ul li{
+	display: inline-block;
+	padding: 0 23px;
+    border-right: 1px solid #e6e6e5;
+}
+.header-nav .indexPage>ul img{
+	margin-right: 60px;
+}
+.header-nav .indexPage>div{
+	float: right;
+	line-height: initial;
+}
+.header-nav .indexPage>div div{
+	display: inline-block;
+	margin-right: 10px;
+}
+.header-nav .indexPage>div div p{
+	margin: 12px 0 9px;
+}
+.header-nav .indexPage>div div p input{
+	width: 160px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-right: 5px;
+    border: 1px solid #9aa4ad;
+}
+    
+.header-nav .indexPage>div div span{
+	font-size: 14px;
+}  
+.header-nav .indexPage>div div span a{
+	margin-right: 12px;
+} 
+.header-nav .indexPage>div>span{
+	vertical-align: top;
+	font-size: 12px;
+	color: #9ca7ab;
+    display: inline-block;
+    margin: 18px 0 10px;
+} 
+.header-nav .indexPage>div>span:before{
+	content: url(../img/shop-car.png);
+	vertical-align: middle;
+}
+.header-nav .indexPage>div>span b{
+	color: #f99302;
+}
+/*--------nav-end*/
+.content{
+	background: #eee;
+	padding: 60px 0 78px;
+}
+.content .firsr-floor{
+	width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+.content .firsr-floor .floor-list{
+	overflow: hidden;
+	height: 48px;
+    line-height: 48px;
+    background: #282828;
+}
+.content .firsr-floor .floor-list p{
+	float: left;
+	color: #fff;
+}
+.content .firsr-floor .floor-list li{
+	float: right;
+}
+.content .firsr-floor .floor-list li a{
+	color: #fff;
+	height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    padding: 0 27px;
+}
+ .on{
+	background: #f99302 !important;
+}
+.content .firsr-floor .floor-list p:before{
+	content: attr(font-pre);
+	margin-left: 14px;
+	font-weight: bold;
+	font-size: 24px;
+	
+}
+.content .firsr-floor .floor-list p:after{
+	content: attr(font-next);
+	margin-left: 18px;
+	font-size: 20px;
+}
+.content .firsr-floor .floor-item{
+	overflow: hidden;
+	height: 478px;
+    margin-bottom: 80px;
+}
+.content .firsr-floor .floor-item>div,
+.content .firsr-floor .floor-item>p,
+.content .firsr-floor .floor-item>ul{
+	float: left;
+}
+.content .firsr-floor .floor-item>div{
+	width: 15.917%;
+	border-left: 1px solid #e4e4e4;
+}
+.content .firsr-floor .floor-item>div p{
+	padding: 15px;
+}
+.content .firsr-floor .floor-item>div p:before{
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border: 3px solid #F99302;
+	border-radius: 50px;
+	margin-right: 4px;
+	
+}
+.content .firsr-floor .floor-item>div dl {
+	overflow: hidden;
+}
+.content .firsr-floor .floor-item>div dl dd{
+	float: left;
+	border-top: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    width: 49.48%;
+    text-align: center;
+    height: 91px;
+}
+.content .firsr-floor .floor-item>div dl dd a:after{
+	content: attr(data-name);
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.content .firsr-floor .floor-item>div dl dd a img{
+	width: 65px;
+	height: 65px;
+}
+.content .firsr-floor .floor-item>p{
+	width: 24%;
+	height: 478px;
+}
+.content .firsr-floor .floor-item>p img{
+	height: 100%;
+	width: 100%;
+}
+.content .firsr-floor .floor-item>ul{
+	width: 60%;
+	zoom:1;    /*==for IE6/7 Maxthon2==*/
+
+}
+.content .firsr-floor .floor-item>ul:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}   /*==for FF/chrome/opera/IE8==*/
+.content .firsr-floor .floor-item>ul li{
+	float: left;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    padding: 20px;
+    width: 27.64%;
+    text-align: center;
+}
+.content .firsr-floor .floor-item>ul a{
+	color: #333;
+}
+.content .firsr-floor .floor-item>ul li img{
+	width: 115px;
+    height: 115px;
+}
+.content .firsr-floor .floor-item>ul li p{
+	text-align: left;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 44px;
+}
+.content .firsr-floor .floor-item>ul li span{
+	text-align: left;
+	display: -webkit-box;
+    margin-top: 14px;
+}
+.content .firsr-floor .floor-item>ul li span:before{
+	content: "￥";
+	font-size: 12px;
+}
+/*content--end*/
+
+.footer{
+	padding: 60px 80px 45px;
+	background: #313131;
+	color: #fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer-top{
+	overflow: hidden;
+	padding-bottom: 35px;
+    border-bottom: 1px solid #fff;
+}
+.footer-top>ul{
+	float: left;
+	zoom:1;
+}
+.footer-top>ul:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}   /*==for FF/chrome/opera/IE8==*/
+.footer-top>ul li{
+	float: left;
+	margin-right: 110px;
+}
+.footer-top>ul li dt{
+	margin-bottom: 40px;
+	font-size: 15px;
+}
+.footer-top>ul li dd{
+	font-size: 14px;
+}
+.footer-top>div{
+	float: right;
+}
+.footer-top>div ul li a{
+	font-size: 20px;
+}
+.footer-top>div ul li:first-child a:after{
+	content: ">";
+	float: right;
+}
+.footer-top>div ul li:first-child p{
+	font-size: 14px;
+    padding: 21px 0 45px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+.footer-top>div ul .more{
+	margin-top: 40px;
+}
+.footer-top>div ul .more form{
+	margin: 15px 0;
+    border: 1px solid #fff;
+    overflow: hidden;
+    padding: 20px 22px;
+    font-size: 14px;
+}
+.footer-top>div ul .more form p:first-child{
+	margin-right: 5px;
+}
+.footer-top>div ul .more form p,.footer-top>div ul .more form input[type="submit"]{
+	float: left;
+}  
+.footer-top>div ul .more form input{
+	background: initial;
+	border: none;
+}
+.footer-top>div ul .more form input[type="submit"]{
+	color: #fff;
+    font-size: 20px;
+}
+.more p{
+	font-size: 14px;
+}   
+.footer-bottom{
+	overflow: hidden;
+	font-size: 14px;
+	padding-top: 36px;
+}
+.footer-bottom>a,
+.footer-bottom>div{
+	float: left;
+}
+.footer-bottom>a{
+	margin: 8px 20px 0 0;
+}
+.footer-bottom>div p span{
+	margin-right: 52px;
+}
+.footer-bottom>div p span:before{
+	content: "Add";
+}
+.footer-bottom>div p span:after{
+	content: "中国某某省某某市某某区某路68号";
+}
+.footer-bottom>div p b:before{
+	content: "Fax";
+}
+.footer-bottom>div p b:after{
+	content: "8688888";
+}
+.footer-bottom>div p span:before,
+.footer>div p b:before{
+	padding-right: 17px;
+    border-right: 1px solid #fff;
+    margin-right: 17px;
+}
+.footer-bottom>div>span:before{
+	content: "某某发展股份有限公司Copyright2017 All Pight Reserved [ICP备00000000号]";
+	margin-right: 50px;
+}
+.footer-bottom>div>span:after{
+	content: "网站建设：聚达传媒 ";
+}
