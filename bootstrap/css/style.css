@@ -1,0 +1,110 @@
+.container-fluid>.row{
+	margin: 0;
+	min-width: 1200px;
+}
+.container-fluid{
+	padding: 0;
+}
+.container-fluid .col-md-12{
+	padding: 0;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.data-header{
+	width: 1200px;
+	min-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+}
+.data-header ul{
+	margin-top: 25px;
+}
+.data-header ul li{
+	width: 20%;
+	text-align: center;
+	}
+.data-header ul li a{
+	font-size: 20px;
+	color: #999;
+}
+.data-banner{
+	min-width: 1200px;
+    margin: 0 auto;
+}
+.data-banner img{
+	width: 100%;
+}
+h2{
+	margin-bottom: 60px;
+}
+h2 div{
+	color: #333;
+}
+h2 span{
+	display: inline-block;
+    border-top: 1px solid #ccc;
+    margin-top: 6px;
+    color: #999;
+}
+.data-service,.data-case,.data-about,.data-relation{
+	width: 1200px;
+	min-width: 1200px;
+    margin: 0 auto;
+}
+.data-service .thumbnail,.data-case .thumbnail,.data-about .thumbnail{
+	border: none;
+	box-shadow: none;
+}
+.data-service .thumbnail h4,.data-about .thumbnail h4{
+	text-align: center;
+}
+.data-service .thumbnail p,.data-case .thumbnail p,.data-about .thumbnail p{
+	color: #999;
+}
+.data-relation h3{
+	margin-top: 0;
+}
+.copy{
+	width: 1200px;
+	min-width: 1200px;
+    margin: 0 auto;
+}
+.copy p{
+	    color: #666;
+    	text-align: center;
+}
+.pb70{
+	padding-bottom: 70px;
+}
+.pt70{
+	padding-top: 70px;
+}
+
+.data-case>.col-md-4:nth-child(3n),
+.data-about .col-md-4:nth-child(3n),
+.data-service .col-md-3:nth-child(4n),
+.data-header .col-md-5,
+.data-relation .col-md-5,
+.data-service .thumbnail:last-child,
+.data-case>.col-md-4>.thumbnail:nth-child(3n),
+.data-about>.col-md-4>.thumbnail:nth-child(3n),.pr0{
+	padding-right: 0 !important;
+}
+.data-case>.col-md-4:nth-child(3n+1),
+.data-about .col-md-4:nth-child(3n+1),
+.data-service .col-md-3:nth-child(4n+1),
+.data-header .col-md-2,
+.data-relation .col-md-5,
+.data-service .thumbnail:first-child,
+.data-case>.col-md-4>.thumbnail:nth-child(3n+1),
+.data-about>.col-md-4>.thumbnail:nth-child(3n+1),.pl0{
+	padding-left: 0 !important;
+}
+.bg-fc{
+	background: #fcfcfc;
+}
+.data-case .thumbnail{
+	background: #fcfcfc;
+}
