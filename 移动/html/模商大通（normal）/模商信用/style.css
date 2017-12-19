@@ -1,0 +1,129 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+.wraper .credit-header{
+	background: url(credit-bg.png) no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 0 15px;
+}
+/*credit-header*/
+.wraper .credit-info{margin-top: 40px;}
+.wraper .pentagon{
+	    background: url(pentagon.png) no-repeat;
+	    width: 145px;
+	    height: 139px;
+	    text-align: center;
+	    line-height: 152px;
+	    font-size: 35px;
+	    color: #fff;
+	    background-size: cover;
+	    position: relative;
+}  
+.wraper .credit-header p{
+	    margin-top: 60px;
+	    color: #fff;
+}
+.wraper .credit-header span{
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	font-size: 12px;
+	line-height: 22px;
+}
+.wraper .pentagon span:before{font-family:iconfont;font-style:normal;-webkit-font-smoothing:antialiased;display: block;font-size: 22px;}
+.wraper .pentagon span:nth-child(6):before{ content: "\e623"; }
+.wraper .pentagon span:nth-child(2):before{ content: "\e823";}
+.wraper .pentagon span:nth-child(3):before{ content: "\e649";}
+.wraper .pentagon span:nth-child(4):before{ content: "\e62d";}
+.wraper .pentagon span:nth-child(5):before{ content: "\e635";}
+
+.wraper .pentagon span:nth-child(6):after { content: "经营行为"; }
+.wraper .pentagon span:nth-child(2):after { content: "身份特征";}
+.wraper .pentagon span:nth-child(3):after{ content: "履约历史";}
+.wraper .pentagon span:nth-child(4):after{ content: "行为偏好";}
+.wraper .pentagon span:nth-child(5):after{ content: "关联关系";}
+
+.wraper .pentagon span:nth-child(6){top: -50px;left: 50px;}
+.wraper .pentagon span:nth-child(2){left: -60px;top: 28px;}
+.wraper .pentagon span:nth-child(3){right: -60px;top: 28px;}
+.wraper .pentagon span:nth-child(4){bottom: -45px;left: -20px;}
+.wraper .pentagon span:nth-child(5){bottom: -45px; right: -20px; }
+		
+.wraper h1{
+	    background: #f8f8f8;
+	    line-height: 40px;
+	    background-image: linear-gradient(0deg,#eaeaea,#eaeaea 50%,transparent 50%);
+	    background-size: 100% 1px;
+	    background-repeat: no-repeat;
+	    background-position: bottom;
+}
+
+.wraper h1:before{
+	content: "信用提升宝典";
+	font-weight: normal;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.wraper ul{
+	margin-top: 15px;
+}
+
+.wraper li{
+	padding: 0 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+}  
+ 
+.wraper li:before{
+	content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #45b0f8;
+    border-radius: 500px;
+    margin: 8px 15px 0 0;
+}
+.wraper li:after{
+	 flex-basis: 90%;
+}
+   
+.wraper li:first-child:after{
+	/*content: "守法经营，诚信交易，真诚、持续累积交易记录";*/
+	content:"经营行为：持续累积守法.诚信.交易记录有助于提升信用"
+}
+
+.wraper li:nth-child(2):after{
+	/*content: "按时履约，偿还欠款，保持良好信用记录";*/
+	content:"身份特征：我们会从您的实名情况.社会属性.办公环境进行考察"
+}
+
+.wraper li:nth-child(3):after{
+	/*content: "积极发展，扩大规模，高效营销，提升品牌";*/
+	content:"履约信用：我们会从您的交易对象.支付情况.进行评估"
+}
+.wraper li:nth-child(4):after{
+	content:"关联关系：我们会从您的社交关系.需求行为两个维度评估关系的影响力"
+}
+.wraper li:last-child:after{
+	content:"行为偏好：我们会从您的登录.浏览.需求下单等行为特征和兴趣片还进行量化"
+}
+.tip{font-size: 14px;color: #FF3333;padding: 15px;margin-bottom: 50px;}
+.tip h5{font-weight: normal; margin: 0;}
+.tip h5:before{content: "温馨提示：";font-size: 14px}
+.tip p:before{content: "我们会从以上5个综合维度行为.对您的模商信用进行评估，信用获取越高.有助于您的企业获得小额贷款.免押金租赁办公场地等。";}
+@media all and (max-width:320px){
+	.wraper .credit-header p {
+	    margin-top: 50px;
+	}
+}        

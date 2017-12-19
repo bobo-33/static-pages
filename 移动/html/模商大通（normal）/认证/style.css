@@ -1,0 +1,45 @@
+body,div,h1,h2,html,p,span,ul,dl,dd{margin:0;padding:0;border:0;outline:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+a{text-decoration: none;color: #333;}
+.row{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.justify-start{justify-content: flex-start;}
+.space{display:block;width:100%;min-height:12px;background-color:#f8f8f8;background-image:-webkit-linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%);background-image:linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:top;}
+.line{background-image:linear-gradient(#eaeaea,#eaeaea 50%,transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:bottom}
+@font-face {
+  font-family: 'iconfont';  /* project id 503399 */
+  src: url('//at.alicdn.com/t/font_503399_q780lkvn6p6i529.eot');
+  src: url('//at.alicdn.com/t/font_503399_q780lkvn6p6i529.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_503399_q780lkvn6p6i529.woff') format('woff'),
+  url('//at.alicdn.com/t/font_503399_q780lkvn6p6i529.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_503399_q780lkvn6p6i529.svg#iconfont') format('svg');
+}
+.iconfont:before{font-family:'iconfont';font-style:normal;-webkit-font-smoothing:antialiased;vertical-align: middle;font-size: 20px;}
+.icon-kefu:before{content: "\e67a";}
+.icon-toubiao:before{content: "\e932";}
+.icon-source:before{content: "\e67e";}
+.icon-renzheng:before{content: "\e645";}
+.header,.header div,.rights-list{display:flex;flex-direction:column;justify-content:center;align-items:center}
+.header-box{background-color:#f8f8f8;padding:15px}
+.header{background:url(credit-bg.png) no-repeat;background-size:cover;padding:15px 10px;border-radius:6px}
+.header div{position:relative}
+.header img{width:80px;height:80px;border-radius:500px}
+.header .span-active{border:1px solid #a8dbfe !important;background:#3693e0 !important;}
+.header span{display: inline-block;border-radius: 15px;font-size: 12px;line-height: 12px;border: 1px solid #b5b5b5;background: #cbcbcb;color: #fff;position: absolute;bottom: -5px;width: 66px;height: 22px;text-align: center;line-height: 22px;margin-left: 50%;left: -33px;}
+.header p{color:#fff;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;margin-top:20px}
+h2{font-weight:400;font-size:16px;padding:8px 15px}
+h2:before{content: "权益";}
+.rights-list{flex-direction:row;justify-content:space-between;flex-wrap:wrap;padding:15px 10px}
+.rights-list li{text-align:center;flex-basis:33%;margin-bottom:15px}
+.rights-list li:first-child dd:before{content: "1v1专线客服";}
+.rights-list li:first-child span:before{content: "24x7解答跟进";}
+.rights-list li:nth-child(2) dd:before{content: "投标上限";}
+.rights-list li:nth-child(2) span:before{content: "每天投标500次";}
+.rights-list li:nth-child(3) dd:before{content: "资源推送";}
+.rights-list li:nth-child(3) span:before{content: "1对1资源配置对接";}
+.rights-list li:last-child dd:before{content: "认证标识";}
+.rights-list li:last-child span:before{content: "可信的企业形象";}
+.rights-list dt{display:inline-block;width:40px;height:40px;text-align:center;line-height:40px;background-color:#b5b5b5;color:#fff;border-radius:500px}
+.rights-list dd{font-size:14px}.rights-list span{font-size:12px;color:#999}
+.rights-active{background-color:#3693e0 !important;}

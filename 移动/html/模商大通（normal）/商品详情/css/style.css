@@ -1,0 +1,26 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+a{text-decoration: none;color: #333;}
+body{background-color: #f8f8f8;}
+.company-name,h1,.article{background-color: #fff;}
+.row{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.justify-start{justify-content: flex-start;}
+.space{display:block;width:100%;min-height:12px;background-color:#f8f8f8;background-image:linear-gradient(180deg,#ddd,#ddd 50%,transparent 50%),linear-gradient(0deg,#ddd,#ddd 50%,transparent 50%);background-size:100% 1px,100% 1px;background-repeat:no-repeat;background-position:top,bottom}
+.line{background-image:linear-gradient(#ddd,#ddd 50%,transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:bottom}
+.wraper{margin-bottom: 100px;}
+.company-name{padding:15px}
+.company-name span{margin-right:10px;display: inline-block;width:40px;height:40px;background: url(../img/logo.png) no-repeat;background-size: contain;}
+.company-name dl,.company-name dl dd{margin:0}
+.company-name dl dd{font-size:12px;color:#999}
+.company-name dl dt:before{content:"模商大通"}
+.company-name dl dd:before{content:"方便、安全的模具交易平台"}
+
+.swiper-container img{width: 100%;}
+
+h1{font-weight: normal;padding: 15px;font-size: 16px;}
+.article{padding: 15px;color: #999;}
+.footer{width: 100%;position: fixed;bottom: 0;left: 0;z-index: 999;height: 50px;line-height: 50px;}
+.button-all{display: inline-block;color: #fff;border: none;width: 100%;height: 100%;border-radius: 0;background-color: #3a9ef6;text-align: center;}
+.button-all:before{content: "联系TA";}

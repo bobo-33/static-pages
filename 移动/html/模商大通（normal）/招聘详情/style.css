@@ -1,0 +1,34 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+ul{list-style:none}
+a{text-decoration: none;color: #333;}
+.row{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.justify-start{justify-content: flex-start;}
+.space{display:block;width:100%;min-height:12px;background-color:#f8f8f8;background-image:-webkit-linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%);background-image:linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:top;}
+
+.iconfont:before{font-family:'iconfont';font-style:normal;-webkit-font-smoothing:antialiased;vertical-align: middle;}
+.icon-bottom:before{content: "\e61b";color: #45b0f8;font-size: 24px;}
+
+.line{background-image:linear-gradient(#eaeaea,#eaeaea 50%,transparent 50%);background-size:100% 1px;background-repeat:no-repeat;background-position:bottom}
+
+.company-name,.main{padding:15px}
+.company-name span{margin-right:10px;display: inline-block;width:40px;height:40px;background: url(logo.png) no-repeat;background-size: contain;}
+.company-name dl,.company-name dl dd{margin:0}
+.company-name dl dd{font-size:12px;color:#999}
+.company-name dl dt:before{content:"模商大通"}
+.company-name dl dd:before{content:"方便、安全的模具交易平台"}
+
+.about,.demand-title{flex-direction:column;justify-content:center}
+.about h1,.about p,.about span{margin-bottom:15px}
+.about span{width:80px;height:80px;background:url(logo.png) no-repeat;background-size:contain}
+.about p:before{content:"模商大通"}.about .hire:before{content:"扫码下载模商大通，好工作等着你!";font-size:18px}
+.about b{width:125px;height:125px;background:url(code.png) no-repeat;background-size:contain}
+.about h6{margin-top:35px}.about h6:before{font-weight:400;content:"@ 模商大通";font-size:14px}
+
+.demand-title{padding:0 0 30px}.demand-title span img{width:40px;height:40px;border-radius:500px}
+.demand-title h2{font-size:16px;line-height:48px;font-weight:400;text-overflow:-o-ellipsis-lastline;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}
+.demand-title p:before{content:"￥"}
+.demand-title p:after{content:"/月"}
+.demand-info{padding-top:15px;font-size:14px}.demand-info p{margin-top:15px;text-align:center}
+#more{height:0;position:relative;overflow:hidden;-webkit-transition:height .6s;-moz-transition:height .6s;-o-transition:height .6s;transition:height .6s}

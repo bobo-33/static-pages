@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_492438_qrg9b3bfsl4pwrk9.css"/>
+	</head>
+	<body>
+		<div class="wraper">
+			<div class="row justify-start company-name line">
+				<span></span><dl><dt></dt><dd></dd></dl>
+			</div>
+			<div class="main">
+				<div class="demand-title row line">
+					<span><img src="img/company.png" alt="" /></span>
+					<h2>我想找专业团队设计一个模具</h2>
+					<p>2000</p>
+				</div>
+				<div class="demand-info">
+					中心距尺寸（孔间距、型芯间距、凹槽间距和
+							凸台间距等）
+							中心距不受磨损的影响.应以名义尺寸的中间值
+							作为计算尺寸,再加收缩量。
+							例如：32.70± mm的孔间距，材料缩水率为
+							1.005，其计算公式为
+							（32.70＋0.25/2）×1.005=32.989,取双向等
+							值正负偏差。
+					<div id="more" class="container">
+				   			 中心距尺寸（孔间距、型芯间距、凹槽间距和
+							凸台间距等）
+							中心距不受磨损的影响.应以名义尺寸的中间值
+							作为计算尺寸,再加收缩量。
+							例如：32.70± mm的孔间距，材料缩水率为
+							1.005，其计算公式为
+							（32.70＋0.25/2）×1.005=32.989,取双向等
+							值正负偏差。
+					</div>
+					<p class="iconfont icon-bottom" id="bottom"></p>
+				</div>
+			</div>
+			<div class="about row">	<span></span><p></p><h1></h1><b></b><h6></h6></div>
+		</div>
+		<script type="text/javascript">
+			(function() {
+		    var eleBtn = document.getElementById("bottom"),
+		        eleMore = document.getElementById("more");
+		    
+		    var display = false;
+		    
+		    eleBtn.onclick = function() {
+		        display = !display;
+		        eleMore.style.height = display? "auto": "0px"
+		        return false;
+		    };
+		})();
+		</script>
+	</body>
+</html>
