@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/fileinput.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/wangEditor.css"/>
+		
+		<script src="../../js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/script.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/wangEditor.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/fileinput.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--ie8兼容bootstrap解决方案-->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div>
+			<!--left-->
+			<div class="sider">
+				<div class="logo"></div>
+				<div class="menu">
+					<ul>
+						<li>
+							<a><i class="iconfont icon-settings"></i><span>系统设置</span></a>							
+						</li>
+						<li>
+							<a><i class="iconfont icon-network"></i><span>营销网络</span></a>
+							<div class="sub_menu">
+								<p><a href="html/Marketing_network/1.html">首页</a></p>
+								<p><a href="html/Marketing_network/2.html">团队列表</a></p>
+								<p><a href="html/Marketing_network/3.html">添加代理或医生</a></p>
+								<p><a href="html/Marketing_network/4.html">查看医生</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-mall"></i><span>商城管理</span></a>
+							<div class="sub_menu">
+								<p><a>商品分类管理</a></p>
+								<p><a>商品管理</a></p>
+								<p><a>添加商品</a></p>
+								<p><a>订单管理</a></p>
+								<p><a>订单详情</a></p>
+								<p><a>销售统计</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-community"></i><span>社区管理</span></a>
+							<div class="sub_menu">
+								<p><a>帖子列表</a></p>
+								<p><a>帖子详情</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-content"></i><span>内容管理</span></a>
+							<div class="sub_menu">
+								<p><a>内容分类</a></p>
+								<p><a>添加分类</a></p>
+								<p><a>文章列表</a></p>
+								<p><a>添加文章</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-users"></i><span>用户管理</span></a>
+							<div class="sub_menu">
+								<p><a>用户列表</a></p>
+								<p><a>添加用户</a></p>
+								<p><a>用户详情</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-adverse"></i><span>广告管理</span></a>
+							<div class="sub_menu">
+								<p><a>广告列表</a></p>
+								<p><a>添加广告</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-push"></i><span>推送管理</span></a>
+							<div class="sub_menu">
+								<p><a>推送历史</a></p>
+								<p><a>推送消息</a></p>
+							</div>
+						</li>
+						<li>
+							<a><i class="iconfont icon-version"></i><span>版本管理</span></a>
+							<div class="sub_menu">
+								<p><a>版本列表</a></p>
+								<p><a>发布版本</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--right-->
+			<div>
+				<div class="navbar-fixed-top toper">
+					欢迎您：<span>超级管理员</span><a href="">修改密码</a><a href="" class="no-border">退出登录</a>
+				</div>
+				<div class="headline clearfix">添加商品<a href="" class="f14  pull-right">返回</a></div>		
+				
+				<div class="wraper">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12  mt15">	
+							<form class="ml80">
+								<div class="form-group">
+								    <label for="name">商品标题</label>
+								    <input type="text" class="form-control w-600" id="name" >
+								</div>
+								<div class="form-group">
+								    <label for="type">商品类型</label>
+								    <p>
+								    	<input type="radio" name="type"  data="普通商品" class="mr10"/><input type="radio" name="type"  data="积分商品" />
+								    </p>
+								</div>
+								<div class="form-group">
+								    <label for="type">商品分类</label>
+								    <p>
+								    	<select>
+											<option>请选择分类</option>
+										</select>
+								    </p>
+								</div>
+								<div class="form-group">
+								    <label for="">货号</label>
+								    <input type="text" class="form-control w-190" id="" >
+								</div>
+								<div class="form-group">
+								    <label for="">商品规格</label>
+								    <p>
+								    	<input type="text" class="w-130 mr10" placeholder="默认规格"/><input type="text" class="w-90 mr10" placeholder="库存"/><input type="text" class="w-150" placeholder="请输入对应价格"/>
+										<span class="text-danger ml20">如果改商品无多种规格，则直接填写价格</span>
+								    </p>
+								</div>
+								<div class="form-group w-600">
+								    <label for="">商品相册</label>
+						            <input id="file-1" type="file" multiple class="file w-400" data-overwrite-initial="false" data-min-file-count="1" >
+								</div>
+								<div class="form-group">
+								    <label for="">商品介绍</label>
+								    <p><div id="editor" class="html_editor w-600"></div></p>
+								</div>
+								<div class="form-group">
+								    <label for="">商品状态</label>
+								    <p><input type="radio" name="status"  data="上架" class="mr10"/><input type="radio" name="status"  data="下架" /></p>
+								</div>
+								<buttton class="btn btn-info">保存</buttton><buttton class="btn btn-default ml20">预览</buttton>
+								
+							</form>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var editor = new wangEditor('editor');
+				editor.create();
+				editor.onchange = function () {
+			        // 编辑区域内容变化时，实时打印出当前内容
+			        $(".screen").html(this.$txt.html());
+			    };
+			$("#file-1").fileinput({
+		        uploadUrl: '#', // you must set a valid URL here else you will get an error
+		        allowedFileExtensions : ['jpg', 'png','gif'],
+		        overwriteInitial: false,
+		        maxFileSize: 1000,
+		        maxFilesNum: 10,
+		        //allowedFileTypes: ['image', 'video', 'flash'],
+		        slugCallback: function(filename) {
+		            return filename.replace('(', '_').replace(']', '_');
+		        }
+			});
+		</script>
+	</body>
+</html>
