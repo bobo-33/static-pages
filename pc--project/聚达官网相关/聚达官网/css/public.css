@@ -1,0 +1,23 @@
+body,button,dd,div,dl,dt,footer,form,h1,h2,h3,h4,h5,h6,header,input,li,menu,ol,p,td,textarea,ul{margin:0;padding:0}
+body{font:16px/24px Arial,Helvetica,sans-serif}
+input[type=text],input[type=tel]{height:45px;width:380px;background:0 0;color:#333;border: none;}
+textarea{vertical-align: top;width: 350px;height: 120px;background:0 0;color:#333;border: none;margin: 10px 0;}
+dl,ol,ul{list-style:none}
+a{text-decoration:none;color:#666}
+a:hover{text-decoration:underline}
+img{border:0;vertical-align: middle;}
+.tl{text-align:left}.tr{text-align:right}.tc{text-align:center}
+.f10{font-size:10px}.f12{font-size:12px}.f16{font-size:16px !important}.f18{font-size:18px}
+.indexPage{width: 1200px;margin: 0 auto;}
+.clearfix{overflow: hidden;}
+.mr0{margin-right: 0 !important;}
+.pb0{padding-bottom: 0 !important;}
+/*color*/
+.color-white{color: #fff !important;}.color-orange{color: #FF6600 !important;}.color-999{color: #999999 !important;}.color-666{color: #666 !important;}.color-333{color: #333 !important;}.color-ccc{color: #ccc !important;}
+.bgColor-fff{background-color: #fff !important;}
+.bgColor-fc{background-color: #FCFCFC !important;}
+/*header*/
+.header {width: 100%;position: fixed;top: 0;z-index: 999;background-color: #fff;min-width: 1200px}
+/*bottom*/
+.footer{margin: 70px 0;width: 100%;min-width: 1200px}
+.middle-section{border-top: 1px solid #ccc;margin-top: 100px;width: 100%;min-width: 1200px}
