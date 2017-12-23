@@ -1,0 +1,40 @@
+body,div,h1,h2,html,p,span,ul{margin:0;padding:0;border:0;outline:0}
+body{font:14px/24px Arial,Helvetica,sans-serif}
+*{-webkit-tap-highlight-color:transparent;outline:0}
+.mr8{margin-right: 8px;}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 518342 */
+  src: url('//at.alicdn.com/t/font_518342_zjb0dq50hwmz33di.eot');
+  src: url('//at.alicdn.com/t/font_518342_zjb0dq50hwmz33di.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_518342_zjb0dq50hwmz33di.woff') format('woff'),
+  url('//at.alicdn.com/t/font_518342_zjb0dq50hwmz33di.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_518342_zjb0dq50hwmz33di.svg#iconfont') format('svg');
+}
+.iconfont:before{font-family:'iconfont';font-style:normal;-webkit-font-smoothing:antialiased;}
+.icon-star:before{content: "\e600";}
+caption .icon-star:before{color: #ffff00;}
+
+
+.wraper{padding: 10px;}
+
+caption{margin-bottom: 5px;text-align: left;}
+
+table{
+	border-collapse: collapse;
+	border: none;
+	margin-bottom: 40px;
+}
+th{
+	background: #4e81bd;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+	width: 33%;
+}
+td{
+	background: #bfbfbf;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+td .icon-star:before{font-size: 12px;}
