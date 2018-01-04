@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=auto">
+    <title>hello world</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div class="wraper">
+		<div class="index-body relative">
+			<div class="logo"></div>
+			<div class="title"><img src="img/lucky.png"/></div>
+			<div class="line h-1"></div>
+			<div class="index-tip line">
+				<table class="width-100" id="itemContainer">
+					<tr>
+						<th>姓名</th><th>电话</th><th>奖品</th>
+					</tr>
+					<!--<tr>
+						<td></td><td></td><td></td>
+					</tr>-->
+				</table>
+			</div>
+			<div class="line flex p530">
+				<div class="holder"></div>
+			</div>
+			<a class="all-btn mt15" href="page1.html">马上参与抽奖 开启欧洲之旅 ></a>
+		</div>
+	</div>	
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/jPages.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".wraper").css("height",$(window).height());
+			var url="index.json";
+			$.get(url,function(res){
+				console.log(res);
+				if(res.status=="success"&&res.status_code=="200"){
+					console.log(res.object);
+					var data=res.object.datasets;
+					$.each(data, function(i,item) {
+						$("table").append("<tr><td>"+item.name+"</td><td>"+item.phone+"</td><td>"+item.prize+"</td></tr>")
+					});
+					/* initiate the plugin */
+			$(".holder").jPages({
+			  containerID  : "itemContainer",
+				perPage: 2//每页显示数据
+		    });
+				}
+			})
+			
+		})
+	</script>
+</body>
+</html>
