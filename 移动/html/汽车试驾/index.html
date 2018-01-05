@@ -26,7 +26,39 @@
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			$(".wraper").css("height",$(window).height())
+			$(".wraper").css("height",$(window).height());
+			//触摸改变背景图片
+			    document.addEventListener("touchstart",touchstart,false);
+			    function touchstart(d) {
+				try {
+				    if (d.touches[0]) {
+					startX = d.touches[0].pageX;
+					startY = d.touches[0].pageY;
+				    }
+				} catch (e) {
+				    console.log(e);
+				}
+			    }
+			    document.addEventListener("touchmove",touchmove,false);
+			    function touchmove(d) {
+				try {
+				    if (d.touches[0]) {
+					endX = d.touches[0].pageX;
+					endY = d.touches[0].pageY;
+				    }
+				} catch (e) {
+				    console.log(e);
+				}
+			    }
+			    document.addEventListener("touchend",touchend,false);
+			    function touchend() {
+				//比较两个值决定用户touch动作的方向
+				if(endY<startY){
+					$(".wraper").css("backgroundImage","url(img/1.png)")
+				}else{
+				    $(".wraper").css("backgroundImage","url(img/1-1.png)")
+				}
+			    }
 		})
 	</script>
 </body>
